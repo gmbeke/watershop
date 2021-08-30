@@ -1,117 +1,19 @@
-/* for simple web index.html */
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    border: 0;
-    font-family: 'Play', sans-serif;
-    font-style: italic;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-}
-body{
+.centent{
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.nav{
+    padding: 95px 70px;
     width: 100%;
-    padding: 20px 70px;
-    display: flex;
-    justify-content: space-between;
-    vertical-align: middle;
-}
-.nav .nav-bland {
+    height: 300px;
     color: white;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 800;
-    
 }
-
-.nav .nav-bland .fas {
-    size: 20px;
-    animation: spin 2s linear 2;
-    vertical-align: middle;
-}
-@keyframes spin {
-    0% {
-      transform: rotateZ(0);
-    }
-    100% {
-      transform: rotateZ(360deg);
-    }
-  }
-
-.fa-tint{
-    color:#ffffff;
-    padding-right: 10px;
-}
-
-.fa-sign-in-alt{
-    font-size: large;
-    padding-right: 10px ;
-}
-.button {
-    font-size: 15px;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: #ffffff;
-    transition: 0.7s ease;
-}
-
-.button:hover.button,
-.button:active {
-    background: #ffffff4d;
-}
-.sidebar{
-    width: 60px;
-    height: 100vh;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    color: white;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.418))
-}
-.menu {
-    text-align: center;
-    justify-content: center;
-    padding-top: 20px;
-    font-size: 20px;
-    
-}
-
-.social-links {
-    justify-content: center;
-    text-align: center;
-    padding-top: 100px;
-    
-}
-.social-links a i{
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-}
-.useful-links{
-    justify-content: center;
-    text-align: center;
-    padding-top: 160px;
-}
-.useful-links a i{
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-}
-.centent{
-    padding: 100px 70px;
+.centent div {
     width: 50%;
-    color: white;
 }
 .centent .header{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
 }
 .centent p {
@@ -124,74 +26,51 @@ body{
 
 @keyframes left-Right {
     0%{
-        transform: translateX(-3px);
+        transform: translateX(-5px);
     }
     50%{
         transform: translateX(0px);
     }
     100%{
-        transform: translateX(-3px);
+        transform: translateX(-5px);
     }
 }
-.footer{
-    text-align: center;
-    color: white;
-    font-size: 15px;
-}
-.drops i{
-    width: 50px;
-    color: #0094CF;
-    animation: moveup 7s linear infinite;
-    opacity: 0.4;
-    font-size: 20px;
-    
-}
-
-.drops{
-    width: 100%;
+#items{
     display: flex;
-    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
     justify-content: space-around;
-    position: absolute ;
-    bottom: -30px;
 }
-@keyframes moveup {
-    0% {
-        transform: translateY(0px);
-        opacity: 0;
-        
-    } 
-    50% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-80vh);
-        opacity: 0;
-    }
+.item {
+    width: 32%;
+    padding: 1px;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(160, 160, 160, 0.164);
 }
-
-
-.drops i:nth-child(1) {
-        animation-delay: 2s;
-    }
-.drops i:nth-child(2) {
-        animation-delay: 5s;
-    }
-.drops i:nth-child(3) {
-        animation-delay: 3.5s;
-    }
-.drops i:nth-child(4) {
-        animation-delay: 4.8s;
-    }
-.drops i:nth-child(5) {
-        animation-delay: 3s;
-    }
-.drops i:nth-child(6) {
-        animation-delay: 6s;
-    }
-.drops i:nth-child(7) {
-        animation-delay: 7s;
-    }
+#items .item .item-image{
+    width: 100%;
+}
+#items .item .item-content{
+    padding: 0px 5px;
+    /* background-color: #f5f5f5; */
+}
+.item-button{
+    font-size: 15px;
+    background-color: #006897;
+    /* border: 2px solid #62CDF6; */
+    border-radius: 0px;
+    padding: 8px 15px;
+    display: block;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    margin: 20px 0px;
+    transition: 0.8s ease;
+}
+.item-button:hover {
+    background-color: #005075;
+}
+.item-button a{
+    text-decoration: none;
+    color: #ffffff;
+}
