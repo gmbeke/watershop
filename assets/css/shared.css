@@ -8,9 +8,13 @@
     /* font-style: italic; */
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
+html    {
+    scroll-behavior: smooth;
+}
+    
 body{
     /* background-image: url(../images/background.png); */
-    background: #F4F4F4;
+    background: #cfcfcf;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,6 +29,9 @@ body{
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
+    position: fixed;
+    z-index: 1;
+    
 }
 .nav .nav-bland {
     display: inline-block;

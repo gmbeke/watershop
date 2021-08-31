@@ -1,6 +1,6 @@
 
 .centent{
-    background-image: url(../images/background.png);
+    background-image: url(../images/background.png) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -8,6 +8,8 @@
     width: 100%;
     height: 300px;
     color: white;
+    position: relative;
+    z-index: 0;
 }
 .centent div {
     width: 50%;
@@ -40,12 +42,22 @@
     width: 100%;
     padding: 20px 0px;
     justify-content: space-around;
+    position: relative;
 }
 .item {
     width: 32%;
     padding: 1px;
     background-color: white;
     box-shadow: 4px 4px 4px rgba(160, 160, 160, 0.164);
+}
+.item-profile{
+    margin: 5px;
+    width: 50px;
+    width: 50px;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #d1d1d1;
 }
 #items .item .item-image{
     width: 100%;
@@ -61,7 +73,7 @@
     border-radius: 0px;
     padding: 8px 15px;
     display: block;
-    position: relative;
+    position: ab;
     bottom: 0px;
     width: 100%;
     margin: 20px 0px;
